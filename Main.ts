@@ -1,4 +1,4 @@
-function treeObject(obj, index, path = '') {
+function treeObject(obj: any, index: number = 0, path = '') {
     for (const key of Object.getOwnPropertyNames(obj)) {
         const value = obj[key];
         const fullPath = path + key;
